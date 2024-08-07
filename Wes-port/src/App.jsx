@@ -2,7 +2,7 @@ import "./app.scss"
 
 const App = () => {
   return <div>
-    <section>Head</section>
+    <section><a href="" className="Head">Head</a></section>
     <section>Hero</section>
     <section>Features</section>
     <section>Call to Action</section>
