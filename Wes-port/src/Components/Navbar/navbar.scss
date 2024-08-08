@@ -1,3 +1,26 @@
-.Navbar{
+.navbar{
+    height: 100px;
 
+    .wrapper{
+        max-width: 1366px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        height: 100%;
+        background-color: green;
+        
+        span{
+            font-weight: bold;
+        }
+
+        .social{
+            display: flex;
+            gap: 20px;
+
+            img{
+                width: 38px;
+                height: 38px;
+            }
+        }
+    }
 }

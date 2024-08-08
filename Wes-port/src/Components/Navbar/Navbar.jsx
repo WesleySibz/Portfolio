@@ -1,17 +1,18 @@
 import "./navbar.scss"
 
-import React from 'react'
-
 const Navbar = () => {
   return (
-    <div className="Navbar">
-      <div className="wraapper">
+    <div className="navbar">
+      <div className="wrapper">
+
         <span>Wesley Sibanyoni</span>
+
         <div className="social">
-          <a href=""><img src=".\assets\dribble.png" alt="Dribble" /></a>
-          <a href=""><img src=".\assets\github.png" alt="Github" /></a>
-          <a href=""><img src=".\assets\linkedin.png" alt="LinkedIn" /></a>
+          <a href="Dribble"><img src=".\src\Components\assets\dribble.png" alt="Dribble" /></a>
+          <a href="Github"><img src=".\src\Components\assets\github.png" alt="Github" /></a>
+          <a href="LinkedIn"><img src=".\src\Components\assets\linkedin.png" alt="LinkedIn" /></a>
         </div>
+
       </div>
       
     </div>

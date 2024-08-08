@@ -4,8 +4,8 @@ html{
 }
 
 *{
-    padding: 10px;
-    margin: 0;
+    padding: auto;
+    margin: auto;
     box-sizing: border-box;
     font-family: "lugrasimo", cursive;
     font-size: 40px;
@@ -37,4 +37,17 @@ section{
 snap-element{
     scroll-snap-stop: normal;
     scroll-snap-stop: always;
+}
+
+.course{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .box{
+        width: 200px;
+        height: 200px;
+        background-color: white;
+    }
 }
