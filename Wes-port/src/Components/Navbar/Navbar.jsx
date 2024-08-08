@@ -1,9 +1,11 @@
 import {motion} from "framer-motion"
 import "./navbar.scss"
+import Sidebar from "../Sidebar/Sidebar"
 
 const Navbar = () => {
   return (
     <div className="navbar">
+      <Sidebar/>
       <div className="wrapper">
 
         <motion.span 
