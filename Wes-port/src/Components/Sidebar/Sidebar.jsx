@@ -2,7 +2,7 @@ import { useState } from "react"
 import Links from "./Links/Links"
 import {motion} from "framer-motion"
 import "./sidebar.scss"
-import TogBtn from "./ToggleButton/TogBtn"
+import ToggleButton from "./ToggleButton/ToggleButton"
 //import { type } from "os"
 const Sidebar = () => {
 
@@ -34,7 +34,7 @@ const Sidebar = () => {
         <motion.div className="bg" variants={variants}>
             <Links/>
         </motion.div>
-        <TogBtn setOpen={setOpen}/>
+        <ToggleButton setOpen={setOpen}/>
     </motion.div>
   )
 }
