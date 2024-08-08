@@ -1,9 +1,14 @@
 
 
 const Links = () => {
+
+    const items =["HomePage","Projects","About","Contact"];
+
   return (
-    <div>
-      Links
+    <div className="links">
+        {items.map(item=>(
+            <a href={`#${item}`} key={item}>{item}</a>
+        ))}
     </div>
   )
 }
