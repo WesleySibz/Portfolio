@@ -37,9 +37,12 @@
         border-radius: 50%;
         position: fixed;
         left: 25px;
-        top: 24px;
+        top: 25px;
         background-color: transparent;
         border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         cursor: pointer;
     }
 }
