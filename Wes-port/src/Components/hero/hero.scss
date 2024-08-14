@@ -35,13 +35,16 @@
                     background-color: transparent;
                     font-size: 15px;
                     color: aliceblue;
+                    margin-right: 20px;
+                    cursor: pointer;
+                    font-weight: 300;
+
                 }
 
             }
 
             img{
                 width: 50px;
-                height: 50px;
             }
         }
 
@@ -53,5 +56,6 @@
         right: 0;
 
         }
+        
     }
 }

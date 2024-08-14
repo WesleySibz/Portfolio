@@ -1,4 +1,5 @@
-import './hero.scss'
+import './hero.scss';
+import {motion} from 'framer-motion';
 
 const Hero = () => {
   return (
@@ -7,11 +8,19 @@ const Hero = () => {
 
         <div className='text-container'>
             <h2>Wesley Shane</h2>
-            <h1>Don't nothing come to a sleeper but a dream</h1>
+            <h1> Don't nothing come to a sleeper but a dream</h1>
 
             <div className="buttons">
-            <button>See Latest Project</button>
-            <button>Contact Me</button>
+            <motion.button 
+            whileHover={{scale: 1.1}}
+            whileTap={{scale: 0.95}}>
+                See Latest Project
+            </motion.button>
+            <motion.button
+            whileHover={{scale: 1.1}}
+            whileTap={{scale: 0.95}}>
+                Contact Me
+            </motion.button>
             </div>
             <img src=".\src\Components\assets\linkedin.png" alt="" />
         </div>
