@@ -46,6 +46,15 @@
             img{
                 width: 50px;
             }
+
+            .slindingTxtContainer{
+                position: absolute;
+                font-size: 50vh;
+                bottom: -120px;
+                white-space: nowrap;
+                color: #2d2d4543;
+
+            }
         }
 
         .img-container
