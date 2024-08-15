@@ -7,7 +7,7 @@ import ToggleButton from "./ToggleButton/ToggleButton"
 
 const variants = {
     open:{
-        clipPath: "circle(1200px at 50px 50px)",
+        clipPath: "circle(1500px at 50px 50px)",
         transition:{
         delay:0,
         type: "spring",
@@ -16,7 +16,7 @@ const variants = {
     }
 },
     closed:{
-        clipPath:"circle(30px at 50px 50px)",
+        clipPath:"circle( 30px at 50px 50px)",
         transition:{
         delay:0,
         type: "spring",
