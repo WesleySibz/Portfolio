@@ -1,4 +1,4 @@
-import './hero.scss';
+import './hero.scss'
 import {motion} from 'framer-motion';
 
 
@@ -28,14 +28,15 @@ const textVariants={
 
 const slideVariants={
     initial: {
-        x:0
+        x:10
     },
     animate: {
-        x:"-220%",
+        x:"-110%",
         transition:{
             repeat: Infinity,
             repeatType: "mirror",
-            duration: 20,
+            duration: 10,
+            ease: "linear"
         },
     },
 }
@@ -74,15 +75,16 @@ const Hero = () => {
                 </motion.div>
                 
                 <motion.img variants={textVariants} animate="scrollButton" src=".\src\Components\assets\linkedin.png" alt="" />
+
             </motion.div>
 
-            <motion.div 
-            className='slindingTxtContainer' 
-            variants={slideVariants} 
-            initial="initial" 
-            animate="animate">
-                Developer Editor Trader Data analist
-            </motion.div>
+                <motion.div 
+                className='slindingTxtContainer' 
+                variants={slideVariants} 
+                initial="initial" 
+                animate="animate">
+                    Developer Editor Trader Data analist
+                </motion.div>
             
             <div className='img-container'>
                 <img src='.\src\Components\assets\cvphoto.png' alt=''/>
@@ -91,5 +93,4 @@ const Hero = () => {
     </div>
   )
 }
-
 export default Hero
