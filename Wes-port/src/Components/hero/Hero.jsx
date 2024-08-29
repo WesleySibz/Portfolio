@@ -15,6 +15,29 @@ const textVariants={
             staggerChildren: 0.1,
         }
     },
+    scrollButton:{
+        opacity:0,
+        y:10,
+        transition:{
+            duration: 2,
+            repeat: Infinity
+        } 
+
+    }
+}
+
+const slideVariants={
+    initial: {
+        x:0
+    },
+    animate: {
+        x:"-220%",
+        transition:{
+            repeat: Infinity,
+            repeatType: "mirror",
+            duration: 20,
+        },
+    },
 }
 
 const Hero = () => {
@@ -22,42 +45,49 @@ const Hero = () => {
     <div className='hero'>
         <div className="wrapper">
 
-        <motion.div 
-        className='text-container' 
-        variants={textVariants} 
-        initial="initial" 
-        animate="animate">
+            <motion.div 
+            className='text-container' 
+            variants={textVariants} 
+            initial="initial" 
+            animate="animate"
+            >
 
-            <motion.h2 variants={textVariants}>Wesley Shane</motion.h2>
-            <motion.h1 variants={textVariants}> Dont nothing come to a sleeper but a dream</motion.h1>
+                <motion.h2 variants={textVariants}>Wesley Shane</motion.h2>
+                <motion.h1 variants={textVariants}> Dont nothing come to a sleeper but a dream</motion.h1>
 
-            <motion.div className="buttons" variants={textVariants}>
-            <motion.button 
-            whileHover={{scale: 1.1}}
-            whileTap={{scale: 0.95}}
-            variants={textVariants}>
-                See Latest Project
-            </motion.button>
-            <motion.button
-            whileHover={{scale: 1.1}}
-            whileTap={{scale: 0.95}}
-            variants={textVariants}>
-                Contact Me
-            </motion.button>
+                <motion.div className="buttons" variants={textVariants}>
+
+                    <motion.button 
+                    whileHover={{scale: 1.1}}
+                    whileTap={{scale: 0.95}}
+                    variants={textVariants}>
+                        See Latest Project
+                    </motion.button>
+
+                    <motion.button
+                    whileHover={{scale: 1.1}}
+                    whileTap={{scale: 0.95}}
+                    variants={textVariants}>
+                        Contact Me
+                    </motion.button>
+
+                </motion.div>
+                
+                <motion.img variants={textVariants} animate="scrollButton" src=".\src\Components\assets\linkedin.png" alt="" />
             </motion.div>
-            <motion.img variants={textVariants} src=".\src\Components\assets\linkedin.png" alt="" />
 
-            <div className='slindingTxtContainer'>
-                Coder Editor Trader Influencer 
+            <motion.div 
+            className='slindingTxtContainer' 
+            variants={slideVariants} 
+            initial="initial" 
+            animate="animate">
+                Developer Editor Trader Data analist
+            </motion.div>
+            
+            <div className='img-container'>
+                <img src='.\src\Components\assets\cvphoto.png' alt=''/>
             </div>
-        </motion.div>
-        
-        <div className='img-container'>
-            <img src='.\src\Components\assets\cvphoto.png' alt=''/>
         </div>
-        </div>
-
-        
     </div>
   )
 }
