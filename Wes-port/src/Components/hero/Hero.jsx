@@ -28,7 +28,7 @@ const textVariants={
 
 const slideVariants={
     initial: {
-        x:10
+        x:100
     },
     animate: {
         x:"-110%",
@@ -78,13 +78,16 @@ const Hero = () => {
 
             </motion.div>
 
-                <motion.div 
+            <div className="container">
+            <motion.div 
                 className='slindingTxtContainer' 
                 variants={slideVariants} 
                 initial="initial" 
                 animate="animate">
                     Developer Editor Trader Data analist
                 </motion.div>
+            </div>
+                
             
             <div className='img-container'>
                 <img src='.\src\Components\assets\cvphoto.png' alt=''/>
