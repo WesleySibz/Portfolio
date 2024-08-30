@@ -28,14 +28,14 @@ const textVariants={
 
 const slideVariants={
     initial: {
-        x:100
+        x:"60%"
     },
     animate: {
         x:"-110%",
         transition:{
             repeat: Infinity,
             repeatType: "mirror",
-            duration: 10,
+            duration: 30,
             ease: "linear"
         },
     },
