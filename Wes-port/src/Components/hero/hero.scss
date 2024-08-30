@@ -18,13 +18,14 @@
         overflow: hidden;
 
         .text-container{
-            width: fit-content;
-            height: fit-content;
+            width: 700px;
+            height: 1000px;
             display: flex;
             position: absolute;
             flex-direction: column;
             align-content: start;
-            margin-left: 450px;
+            margin-left: 100px;
+            margin-top: -200px;
             z-index: 1;
             background: transparent;
             gap: 10px;
@@ -67,7 +68,8 @@
 
             img{
                 width: 50px;
-                margin: 40px; 
+                margin-left: 40px;
+                cursor: pointer;
             }
 
             

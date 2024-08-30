@@ -1,5 +1,6 @@
 import './hero.scss'
-import {motion} from 'framer-motion';
+import { motion} from 'framer-motion';
+
 
 
 const textVariants={
@@ -11,16 +12,18 @@ const textVariants={
         x:0,
         opacity: 1,
         transistion:{
-            duration: 2,
+            duration: 3,
             staggerChildren: 0.1,
+            ease:"easeIn"
         }
     },
     scrollButton:{
-        opacity:0,
-        y:10,
+        opacity:0.1,
+        y:30,
         transition:{
             duration: 2,
-            repeat: Infinity
+            repeat: Infinity,
+            ease:"easeInOut"
         } 
 
     }
@@ -41,7 +44,9 @@ const slideVariants={
     },
 }
 
+
 const Hero = () => {
+
   return (
     <div className='hero'>
         <div className="wrapper">
@@ -72,9 +77,11 @@ const Hero = () => {
                         Contact Me
                     </motion.button>
 
+                    <motion.img variants={textVariants} animate="scrollButton" src=".\src\Components\assets\linkedin.png" alt="" />
+
                 </motion.div>
                 
-                <motion.img variants={textVariants} animate="scrollButton" src=".\src\Components\assets\linkedin.png" alt="" />
+               
 
             </motion.div>
 
